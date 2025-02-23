@@ -3,10 +3,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('images/Background.png.jpg') no-repeat center center fixed;
-    background-size: 45%;  /* Adjusts the image size to fit within the viewport */
-    background-position: center;
-    background-color: #000;  /* Fallback color */
+    background: url('') no-repeat center center/cover;
+    color: white;
+    text-align: center;
 }
 
 /* Header Styles */
@@ -74,8 +73,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     background: url('images/hero-background.jpg') no-repeat center center/cover;
-    background-size: cover;
-    background-attachment: fixed;
     animation: fadeIn 2s ease-in-out;
     color: #FFD700;
     text-shadow: 2px 2px 5px #000;
