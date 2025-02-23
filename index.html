@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skins Loo - Premium Phone Skins</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Skins Loo</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="cart-button" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <div class="cart-container" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button onclick="toggleCart()">Close Cart</button>
+    </div>
+
+    <section id="hero" class="hero">
+        <h1>Welcome to Skins Loo</h1>
+        <p>Elevate Your Style with Premium Phone Skins</p>
+        <a href="#collections" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2 class="section-title">About Skins Loo</h2>
+        <p>Skins Loo was born out of a passion for personal expression and cutting-edge design. We believe your phone is more than just a device—it's an extension of who you are. Our journey began with a simple idea: to transform ordinary phones into extraordinary works of art.</p>
+        <p>Each skin is meticulously crafted using high-quality vinyl that not only looks stunning but also protects your device from scratches and everyday wear and tear. Our design team draws inspiration from global trends, pop culture, and timeless aesthetics to bring you a diverse collection that resonates with every personality.</p>
+        <p>From the vibrant worlds of anime and the heroic tales of Marvel and DC, to the sleek lines of luxury cars and bikes, and the simplicity of basic designs—we've got something that'll strike a chord with you.</p>
+    </section>
+
+    <section id="collections" class="collections">
+        <h2 class="section-title">Our Collections</h2>
+        <div class="collection-grid">
+            <div class="collection">
+                <img src="images/collections/anime.jpg" alt="Anime Collection">
+                <h3>Anime</h3>
+                <p>Dive into a world of imagination with our Anime collection, featuring characters and art styles from your favorite series.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+            <div class="collection">
+                <img src="images/collections/marvel.jpg" alt="Marvel Collection">
+                <h3>Marvel</h3>
+                <p>Unleash your inner hero with skins inspired by the iconic Marvel universe, showcasing legends like Iron Man, Captain America, and more.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+            <div class="collection">
+                <img src="images/collections/dc.jpg" alt="DC Collection">
+                <h3>DC</h3>
+                <p>Embrace the power of the DC universe with designs featuring Batman, Superman, Wonder Woman, and the Justice League.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+            <div class="collection">
+                <img src="images/collections/cars.jpg" alt="Cars Collection">
+                <h3>Cars</h3>
+                <p>Fuel your passion for speed with our Cars collection, highlighting sleek models and iconic automotive brands.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+            <div class="collection">
+                <img src="images/collections/bikes.jpg" alt="Bikes Collection">
+                <h3>Bikes</h3>
+                <p>Ride in style with skins featuring powerful bikes and designs that capture the essence of the open road.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+            <div class="collection">
+                <img src="images/collections/basic.jpg" alt="Basic Collection">
+                <h3>Basic</h3>
+                <p>Simplicity at its finest. Our Basic collection offers minimalist designs for those who appreciate understated elegance.</p>
+                <p><strong>Price range:</strong> ₹199 - ₹499</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2 class="section-title">Our Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/products/anime_naruto.jpg" alt="Naruto Skin">
+                <h3>Naruto Skin</h3>
+                <p class="product-description">Join the ninja world with this dynamic Naruto skin, capturing the spirit of perseverance and friendship.</p>
+                <p><strong>Price:</strong> ₹299</p>
+                <button onclick="addToCart('Naruto Skin', 299)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/products/marvel_ironman.jpg" alt="Iron Man Skin">
+                <h3>Iron Man Skin</h3>
+                <p class="product-description">Suit up with the genius billionaire playboy philanthropist's iconic armor design.</p>
+                <p><strong>Price:</strong> ₹399</p>
+                <button onclick="addToCart('Iron Man Skin', 399)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/products/dc_batman.jpg" alt="Batman Skin">
+                <h3>Batman Skin</h3>
+                <p class="product-description">Embrace the night with this sleek Batman skin, embodying the Dark Knight's vigilante spirit.</p>
+                <p><strong>Price:</strong> ₹349</p>
+                <button onclick="addToCart('Batman Skin', 349)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/products/cars_mustang.jpg" alt="Mustang Skin">
+                <h3>Mustang Skin</h3>
+                <p class="product-description">Feel the power of American muscle with the classic Mustang design gracing your device.</p>
+                <p><strong>Price:</strong> ₹249</p>
+                <button onclick="addToCart('Mustang Skin', 249)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/products/bikes_harley.jpg" alt="Harley Davidson Skin">
+                <h3>Harley Davidson Skin</h3>
+                <p class="product-description">Channel the freedom of the open road with this iconic Harley Davidson skin.</p>
+                <p><strong>Price:</strong> ₹279</p
