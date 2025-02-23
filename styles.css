@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: url('images/Background.png.jpg') no-repeat center center fixed;
-    background-size: contain;  /* Adjusts the image size to fit within the viewport */
+    background-size: cover;  /* Adjusts the image size to fit within the viewport */
     background-color: #000;  /* Fallback color */
 }
 
